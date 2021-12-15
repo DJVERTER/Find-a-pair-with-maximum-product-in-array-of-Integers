@@ -1,17 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 
-namespace ArrayAT
+namespace Copie
 {
     class Program
     {
-        public static void Main()
+        static void Main(string[] args)
         {
-            int[] arr = { 1, -5, 8, -20, 13 };
+            int[] arr = { -5, 42, 70, -85, 90, 7 };
             int n = arr.Length;
             int a = arr[0];
             int b = arr[1];
+
             for (int i = 0; i < n; i++)
                 for (int j = i + 1; j < n; j++)
                     if (arr[i] * arr[j] > a * b)
@@ -19,7 +18,8 @@ namespace ArrayAT
                         a = arr[i];
                         b = arr[j];
                     }
-            Console.Write("Max product pair is {" + a + ", " + b + "}");
+            Console.WriteLine($"Max product pairs is: {a} and {b}");
+            Console.WriteLine($"Result of this pairs is: {a + b}");
         }
     }
 }
