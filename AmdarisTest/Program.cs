@@ -20,6 +20,23 @@ namespace Copie
                     }
             Console.WriteLine($"Max product pairs is: {a} and {b}");
             Console.WriteLine($"Result of this pairs is: {a + b}");
+
+            int c = 4;
+            for (int i = 0; i < c; i++)
+            {
+                string sym = "";
+                int r = c - i;
+                for (int j = 1; j < r; j++)
+                {
+                    sym += "*";
+                }
+                for (int y = 0; y <= i; y++)
+                {
+                    sym += "#";
+                }
+                Console.WriteLine(sym);
+            }
+            
         }
     }
 }
